@@ -5,12 +5,12 @@ export default function WishlistPage() {
     {
       title: "ساعت هوشمند سامسونگ",
       price: "€199.99",
-      image: "/file.svg",
+      image: "/products/watch.jpg",
     },
     {
       title: "عینک آفتابی ری‌بن",
       price: "€129.99",
-      image: "/file.svg",
+      image: "/products/sunglasses.jpg",
     },
   ];
 

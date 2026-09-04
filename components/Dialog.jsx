@@ -1,6 +1,6 @@
 "use client";
 
-export default function Dialog({ open, title, children, onClose }) {
+export default function Dialog({ open, title, children, onClose, onConfirm }) {
   if (!open) return null;
 
   return (
@@ -22,7 +22,10 @@ export default function Dialog({ open, title, children, onClose }) {
             لغو
           </button>
 
-          <button className="px-4 py-2 rounded-button bg-primary text-white hover:bg-primaryHover">
+          <button
+            onClick={onConfirm}
+            className="px-4 py-2 rounded-button bg-primary text-white hover:bg-primaryHover"
+          >
             تایید
           </button>
         </div>

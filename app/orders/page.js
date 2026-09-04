@@ -8,19 +8,19 @@ export default function OrdersPage() {
       id: "#1234",
       title: "کفش ورزشی نایک",
       price: "€49.99",
-      image: "/file.svg",
+      image: "/products/shoe.jpg",
     },
     {
       id: "#1235",
       title: "هدفون سونی",
       price: "€89.99",
-      image: "/file.svg",
+      image: "/products/headphones.jpg",
     },
     {
       id: "#1236",
       title: "کیبورد مکانیکال",
       price: "€129.99",
-      image: "/file.svg",
+      image: "/products/keyboard.jpg",
     },
   ];
 

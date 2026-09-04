@@ -29,7 +29,7 @@ export default function Header() {
 
         {/* نوتیفیکیشن */}
         <button className="relative rounded-full p-2 transition hover:bg-primaryLight" aria-label="اعلان‌ها">
-          <span className="text-2xl">🔔</span>
+          <span className="text-xl text-textLight">♧</span>
           <span className="absolute -top-1 -right-1 bg-primary text-white text-xs px-1 rounded-full">
             3
           </span>
@@ -37,7 +37,7 @@ export default function Header() {
 
         {/* پیام‌ها */}
         <button className="relative rounded-full p-2 transition hover:bg-primaryLight" aria-label="پیام‌ها">
-          <span className="text-2xl">✉️</span>
+          <span className="text-xl text-textLight">▱</span>
           <span className="absolute -top-1 -right-1 bg-primary text-white text-xs px-1 rounded-full">
             1
           </span>

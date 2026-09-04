@@ -1,4 +1,5 @@
 import DashboardShell from "../components/DashboardShell";
+import "./globals.css";
 
 export const metadata = {
   title: "Palmyra Dashboard",

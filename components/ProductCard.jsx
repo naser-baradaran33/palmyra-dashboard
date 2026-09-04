@@ -18,7 +18,7 @@ export default function ProductCard({ title, price, image, onClick }) {
         alt={title}
         width={640}
         height={320}
-        className="h-40 w-full rounded-card object-cover"
+        className="h-48 w-full rounded-card object-cover"
       />
 
       <span className="text-textDark font-medium">{title}</span>
