@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 
 export default function DashboardShell({ children }) {
   return (
-    <div className="min-h-screen bg-background lg:flex lg:flex-row-reverse" dir="rtl">
+    <div className="min-h-screen bg-background lg:flex" dir="rtl">
       <Sidebar />
       <div className="min-w-0 flex-1">
         <Header />

@@ -7,7 +7,10 @@ export default function CommentsPage() {
 
   return (
     <div className="flex flex-col gap-section">
-      <h1 className="text-2xl font-bold text-textDark">دیدگاه‌ها</h1>
+      <div>
+        <h1 className="text-2xl font-bold text-textDark">دیدگاه‌ها</h1>
+        <p className="mt-2 text-sm text-textLight">دیدگاه‌هایی که درباره محصولات ثبت کرده‌اید</p>
+      </div>
 
       <div className="flex flex-col gap-cardGap">
         {comments.map((c, index) => (

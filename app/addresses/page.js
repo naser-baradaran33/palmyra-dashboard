@@ -18,7 +18,10 @@ export default function AddressesPage() {
 
   return (
     <div className="flex flex-col gap-section">
-      <h1 className="text-2xl font-bold text-textDark">آدرس‌ها</h1>
+      <div>
+        <h1 className="text-2xl font-bold text-textDark">آدرس‌ها</h1>
+        <p className="mt-2 text-sm text-textLight">آدرس‌های ذخیره شده برای ارسال سفارش‌ها</p>
+      </div>
 
       <div className="flex flex-col gap-cardGap">
         {addresses.map((a, index) => (

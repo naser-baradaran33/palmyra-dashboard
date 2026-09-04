@@ -26,7 +26,10 @@ export default function OrdersPage() {
 
   return (
     <div className="flex flex-col gap-section">
-      <h1 className="text-2xl font-bold text-textDark">سفارش‌ها</h1>
+      <div>
+        <h1 className="text-2xl font-bold text-textDark">سفارش‌ها</h1>
+        <p className="mt-2 text-sm text-textLight">تاریخچه سفارش‌های ثبت شده شما</p>
+      </div>
 
       <div className="grid grid-cols-1 gap-cardGap sm:grid-cols-2 lg:grid-cols-3">
         {orders.map((order, index) => (

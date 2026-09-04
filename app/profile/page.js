@@ -4,7 +4,10 @@ import Button from "../../components/Button";
 export default function ProfilePage() {
   return (
     <div className="flex flex-col gap-section">
-      <h1 className="text-2xl font-bold text-textDark">حساب کاربری</h1>
+      <div>
+        <h1 className="text-2xl font-bold text-textDark">حساب کاربری</h1>
+        <p className="mt-2 text-sm text-textLight">اطلاعات شخصی خود را مدیریت کنید</p>
+      </div>
 
       <div className="flex w-full max-w-xl flex-col gap-5 rounded-card border border-border bg-card p-cardPadding shadow-sm">
         <Input label="نام" placeholder="ناصر" />

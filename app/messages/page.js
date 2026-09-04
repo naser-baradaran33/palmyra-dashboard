@@ -7,7 +7,10 @@ export default function MessagesPage() {
 
   return (
     <div className="flex flex-col gap-section">
-      <h1 className="text-2xl font-bold text-textDark">پیام‌ها</h1>
+      <div>
+        <h1 className="text-2xl font-bold text-textDark">پیام‌ها</h1>
+        <p className="mt-2 text-sm text-textLight">گفت‌وگوها و پیام‌های اخیر شما</p>
+      </div>
 
       <div className="flex flex-col gap-cardGap">
         {messages.map((msg, index) => (

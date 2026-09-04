@@ -16,7 +16,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full shrink-0 border-b border-border bg-card p-4 lg:min-h-screen lg:w-[320px] lg:border-b-0 lg:border-r lg:p-6">
+    <aside className="w-full shrink-0 border-b border-border bg-card p-4 lg:min-h-screen lg:w-[320px] lg:border-b-0 lg:border-l lg:p-6">
       <div className="mb-5 flex items-center justify-between text-xl font-bold text-textDark lg:mb-12">
         <span>پالمیرا</span>
         <span className="text-2xl text-primary">پ</span>
