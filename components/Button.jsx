@@ -1,6 +1,6 @@
 "use client";
 
-export default function Button({ children, onClick, variant = "primary", className = "" }) {
+export default function Button({ children, onClick, variant = "primary", className = "", type = "button" }) {
   const base =
     "px-4 py-2 rounded-button font-medium transition-all duration-200";
 
@@ -13,6 +13,7 @@ export default function Button({ children, onClick, variant = "primary", classNa
   return (
     <button
       onClick={onClick}
+      type={type}
       className={`${base} ${styles[variant]} ${className}`}
     >
       {children}
