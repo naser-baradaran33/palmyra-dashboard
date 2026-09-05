@@ -1,18 +1,8 @@
 import ProductCard from "../../components/ProductCard";
+import { products } from "../../lib/products";
 
 export default function WishlistPage() {
-  const items = [
-    {
-      title: "ساعت هوشمند سامسونگ",
-      price: "€199.99",
-      image: "/products/watch.jpg",
-    },
-    {
-      title: "عینک آفتابی ری‌بن",
-      price: "€129.99",
-      image: "/products/sunglasses.jpg",
-    },
-  ];
+  const items = products.slice(3);
 
   return (
     <div className="flex flex-col gap-section">
@@ -28,6 +18,7 @@ export default function WishlistPage() {
             title={item.title}
             price={item.price}
             image={item.image}
+            href={`/product/${item.slug}`}
           />
         ))}
       </div>

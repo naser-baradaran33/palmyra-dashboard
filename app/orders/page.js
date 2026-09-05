@@ -1,28 +1,10 @@
 "use client";
 
 import ProductCard from "../../components/ProductCard";
+import { products } from "../../lib/products";
 
 export default function OrdersPage() {
-  const orders = [
-    {
-      id: "#1234",
-      title: "کفش ورزشی نایک",
-      price: "€49.99",
-      image: "/products/shoe.jpg",
-    },
-    {
-      id: "#1235",
-      title: "هدفون سونی",
-      price: "€89.99",
-      image: "/products/headphones.jpg",
-    },
-    {
-      id: "#1236",
-      title: "کیبورد مکانیکال",
-      price: "€129.99",
-      image: "/products/keyboard.jpg",
-    },
-  ];
+  const orders = products.slice(0, 3);
 
   return (
     <div className="flex flex-col gap-section">
@@ -38,7 +20,7 @@ export default function OrdersPage() {
             title={order.title}
             price={order.price}
             image={order.image}
-            onClick={() => console.log("Order clicked:", order.id)}
+            href={`/product/${order.slug}`}
           />
         ))}
       </div>

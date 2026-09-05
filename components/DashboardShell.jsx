@@ -2,8 +2,18 @@
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import StorefrontShell from "./StorefrontShell";
+import { usePathname } from "next/navigation";
 
 export default function DashboardShell({ children }) {
+  const pathname = usePathname();
+  const dashboardPaths = ["/dashboard", "/orders", "/wishlist", "/comments", "/addresses", "/messages", "/profile"];
+  const isDashboard = dashboardPaths.includes(pathname);
+
+  if (!isDashboard) {
+    return <StorefrontShell>{children}</StorefrontShell>;
+  }
+
   return (
     <div className="min-h-screen bg-background lg:flex" dir="rtl">
       <Sidebar />
