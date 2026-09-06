@@ -6,8 +6,19 @@ import { useState } from "react";
 import Button from "../../../components/Button";
 import { getProduct } from "../../../lib/products";
 import { products } from "../../../lib/products";
+import FigmaFrame from "../../../components/FigmaFrame";
 
 export default function ProductPage({ params }) {
+  if (params.slug === "classic-leather-bag") {
+    return <FigmaFrame title="PDP Bag" desktop="PDP-Bag-Description1.pdf" mobile="PDP-Bag-Description1-1.pdf" />;
+  }
+  if (params.slug === "nike-sport-shoes") {
+    return <FigmaFrame title="PDP Shoes" desktop="PDP-Shoes.pdf" mobile="PDP-Shoes-1.pdf" />;
+  }
+  return <ProductPageContent params={params} />;
+}
+
+function ProductPageContent({ params }) {
   const product = getProduct(params.slug);
   const [selectedImage, setSelectedImage] = useState(product.image);
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);

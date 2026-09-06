@@ -3,9 +3,12 @@ import Link from "next/link";
 export default function StorefrontShell({ children }) {
   return (
     <div className="min-h-screen bg-white" dir="rtl">
+      <div className="bg-[#292929] py-1.5 text-center text-[10px] text-white/80">
+        پالمیرا؛ تجربه‌ای ساده برای خرید آنلاین
+      </div>
       <header className="sticky top-0 z-30 border-b border-border bg-white/95 backdrop-blur">
-        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10">
-          <Link href="/" className="text-2xl font-black tracking-tight text-primary">پالمیرا</Link>
+        <div className="mx-auto flex h-[72px] max-w-[1368px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+          <Link href="/" className="text-[22px] font-black tracking-tight text-primary">پالمیرا</Link>
           <nav className="hidden items-center gap-8 text-sm text-textDark md:flex" aria-label="منوی فروشگاه">
             <Link href="/" className="transition hover:text-primary">خانه</Link>
             <div className="group relative">
@@ -20,7 +23,7 @@ export default function StorefrontShell({ children }) {
           </nav>
           <div className="flex items-center gap-2">
             <Link href="/cart" className="rounded-button border border-border px-4 py-2 text-sm transition hover:border-primary hover:text-primary">
-              سبد خرید
+              سبد خرید <span className="mr-1 text-primary">۰</span>
             </Link>
             <Link href="/dashboard" className="hidden rounded-button bg-primary px-4 py-2 text-sm text-white transition hover:bg-primaryHover sm:inline-flex">
               حساب کاربری

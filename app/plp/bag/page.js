@@ -1,5 +1,6 @@
 import ProductListingPage from "../../../components/ProductListingPage";
+import FigmaFrame from "../../../components/FigmaFrame";
 
 export default function BagPlpPage() {
-  return <ProductListingPage title="کیف‌ها" eyebrow="PLP Bag" initialCategory="کیف" />;
+  return <FigmaFrame title="PLP Bag" desktop="PLP Bag.pdf" mobile="PLP Bag-1.pdf" />;
 }
