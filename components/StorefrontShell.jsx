@@ -20,8 +20,12 @@ export default function StorefrontShell({ children }) {
                 <Link href="/search" className="block rounded-button px-3 py-2 hover:bg-primaryLight hover:text-primary">جست‌وجو</Link>
               </div>
             </div>
+            <Link href="/plp/shoe" className="transition hover:text-primary">کفش‌ها</Link>
+            <Link href="/plp/bag" className="transition hover:text-primary">کیف‌ها</Link>
+            <Link href="/plp/set" className="transition hover:text-primary">ست‌ها</Link>
           </nav>
           <div className="flex items-center gap-2">
+            <Link href="/search" className="hidden rounded-button border border-border px-3 py-2 text-sm text-textLight transition hover:border-primary hover:text-primary sm:inline-flex">جستجوی محصول</Link>
             <Link href="/cart" className="rounded-button border border-border px-4 py-2 text-sm transition hover:border-primary hover:text-primary">
               سبد خرید <span className="mr-1 text-primary">۰</span>
             </Link>

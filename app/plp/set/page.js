@@ -1,5 +1,5 @@
-import FigmaFrame from "../../../components/FigmaFrame";
+import ProductListingPage from "../../../components/ProductListingPage";
 
 export default function SetPlpPage() {
-  return <FigmaFrame title="PLP Set" desktop="PLP Set.pdf" mobile="PLP Set-1.pdf" />;
+  return <ProductListingPage title="ست‌های منتخب" eyebrow="PLP Set" initialCategory="ست" />;
 }

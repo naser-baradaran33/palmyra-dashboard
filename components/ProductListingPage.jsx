@@ -19,10 +19,10 @@ export default function ProductListingPage({ title, eyebrow = "Web UI Design", i
   }, [category, query, sort]);
 
   return (
-    <div className="mx-auto max-w-[1440px] px-4 py-10 sm:px-6 lg:px-10 lg:py-16">
+    <div className="mx-auto max-w-[1368px] px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       <div className="border-b border-border pb-8">
         <p className="mb-3 text-sm font-bold text-primary">{eyebrow}</p>
-        <h1 className="text-3xl font-black text-textDark sm:text-5xl">{title}</h1>
+        <h1 className="text-3xl font-black text-textDark sm:text-4xl">{title}</h1>
         <p className="mt-3 text-textLight">محصولات انتخاب‌شده با کیفیت و طراحی ماندگار.</p>
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="جست‌وجوی محصول..." className="mt-5 w-full max-w-sm rounded-button border border-border px-4 py-3 text-sm outline-none focus:border-primary" aria-label="جست‌وجوی محصول" />
       </div>
@@ -53,9 +53,14 @@ export default function ProductListingPage({ title, eyebrow = "Web UI Design", i
           ))}
         </div>
       )}
-      <div className="mt-8 grid grid-cols-2 gap-x-3 gap-y-8 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4">
+      <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-12 lg:grid-cols-4">
         {visibleProducts.map((product) => <StoreProductCard key={product.slug} product={product} />)}
       </div>
+      {visibleProducts.length === 0 && (
+        <div className="mt-10 rounded-card border border-dashed border-border bg-slate-50 p-12 text-center text-sm text-textLight">
+          محصولی با این مشخصات پیدا نشد. فیلترها یا عبارت جستجو را تغییر دهید.
+        </div>
+      )}
     </div>
   );
 }

@@ -4,9 +4,9 @@ import StoreProductCard from "../components/StoreProductCard";
 import { products } from "../lib/products";
 
 const categories = [
-  { title: "کفش‌های زنانه", href: "/plp/shoe", image: "/figma-assets/Untitled design - 2026-08-27T150551.514 1.png" },
-  { title: "کیف‌های زنانه", href: "/plp/bag", image: "/figma-assets/Product Card.png" },
-  { title: "ست‌های روزانه", href: "/plp/set", image: "/figma-assets/custom_sphere_03.png" },
+  { title: "کفش‌های زنانه", href: "/plp/shoe", image: "/figma-assets/Product Card.png" },
+  { title: "کیف‌های زنانه", href: "/plp/bag", image: "/figma-assets/Image-1.png" },
+  { title: "ست‌های روزانه", href: "/plp/set", image: "/figma-assets/Untitled design - 2026-08-27T150551.514 1.png" },
 ];
 
 const popularProducts = products.slice(0, 5);
@@ -27,14 +27,10 @@ export default function Home() {
   return (
     <div className="bg-white">
       <section className="mx-auto max-w-[1368px] px-4 pt-6 sm:px-6 lg:px-8">
-        <div className="relative min-h-[360px] overflow-hidden rounded-[1.75rem] bg-[#f2efff] sm:min-h-[470px]">
-          <Image src="/figma-assets/Ads.png" alt="خرید آنلاین از پالمیرا" fill priority className="object-cover object-center" />
-          <div className="absolute inset-y-0 right-0 flex w-[45%] items-center justify-center p-5 sm:p-10">
-            <div className="rounded-3xl bg-white/85 p-5 text-right shadow-xl backdrop-blur-sm sm:p-8">
-              <p className="text-sm font-bold text-primary">تازه‌ترین انتخاب‌ها</p>
-              <h1 className="mt-3 text-2xl font-black leading-tight text-textDark sm:text-4xl">استایل خاص،<br />انتخاب ماندگار</h1>
-              <Link href="/shop" className="mt-5 inline-flex rounded-button bg-primary px-5 py-3 text-sm font-bold text-white transition hover:bg-primaryHover">مشاهده محصولات</Link>
-            </div>
+        <div className="relative aspect-[1262/578] overflow-hidden rounded-[1.75rem] bg-[#f2efff]">
+          <Image src="/figma-assets/App Ads.png" alt="خرید آنلاین از پالمیرا" fill priority className="object-contain object-center" sizes="(max-width: 640px) 100vw, 1368px" />
+          <div className="absolute inset-y-0 right-0 flex w-[42%] items-center justify-center p-4 sm:p-8">
+            <Link href="/shop" className="rounded-button bg-primary px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-primaryHover">مشاهده محصولات</Link>
           </div>
         </div>
       </section>
@@ -64,9 +60,9 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-[1368px] gap-4 px-4 py-8 sm:grid-cols-3 sm:px-6 lg:px-8">
         {[
-          ["Ads.png", "آمبیوه طبیعی"],
-          ["MCI Banner.png", "بسته‌های متنوع"],
-          ["MCI Banner-4.png", "فیلم و سریال"],
+          ["Image-1.png", "کیف‌های جدید"],
+          ["card-article.png", "راهنمای استایل"],
+          ["MCI Banner-4.png", "بسته‌های متنوع"],
         ].map(([image, title]) => (
           <Link href="/shop" key={image} className="overflow-hidden rounded-2xl bg-slate-50 transition hover:-translate-y-1">
             <Image src={`/figma-assets/${image}`} alt={title} width={786} height={400} className="h-auto w-full object-cover" />
